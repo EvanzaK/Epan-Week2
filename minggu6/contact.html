@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+        body {
+            background-color: lightgray;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'DM Sans';
+        }
+        h2 {
+            text-align: center;
+        }
+        nav a:hover{
+            background-color: #673de6;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        nav li{
+            display: inline;
+            list-style-type: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover{
+            background-color: #673de6;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+        nav a{
+            float: left;
+            text-align: center;
+            padding: 12px;
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;  
+        }
+        nav {
+            text-align: center;
+            font-family: 'DM Sans';
+            background-color: lightgray;
+            margin-left: 150px;
+            margin-right: 150px;
+        }    
+        .logo {
+            width: 50px;
+            float: left;
+        }
+        .logo2 {
+            width: 50px;
+            float: right;
+        }
+        header {
+            font-family: 'DM Sans';
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        hr {
+            width: 1000px;
+        }
+        .name {
+            margin-left: 255px;
+        }
+        .lastname {
+            margin-left: 255px;
+        }
+        #lastname {
+            margin-left: 170px;
+        }
+        #name {
+            margin-left: 255px;
+        }
+        .email{
+            margin-left: 255px;
+        }
+        #email {
+            margin-left: 255px;
+        }
+        footer {
+            margin-top: 300px;
+            bottom: 0;
+            background-color: #673de6;
+            color: white ;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h2 {
+            font-family: 'DM Sans';
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h3 {
+            font-family: 'DM Sans';
+            text-align: center;
+        }
+        .copyright{
+            font-family: 'DM Sans';
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+ 
+    <h1>CONTACT</h1>
+    <hr />
+    <header>
+        <h2>HUBUNGI AKU DENGAN CARA DI BAWAH INI</h2>
+        <form name="fkontak" action="proses.php" method="post">
+            <label class="name" for="name">Nama Depan : </label>
+            <label class="lastname" for="lastname">Nama Belakang : </label> 
+            <br /> 
+            <input type="text" id="name" placeholder="Masukkan Nama Depan">
+            <input type="text" name="name" id="lastname" placeholder="Masukkan Nama Belakang"> 
+            <br />
+            <label class="email" for="email">Email :</label> 
+            <br/>
+            <input id="email" type="email" placeholder="Masukkan Alamat Email">
+            <br />
+            <label for="pesan">Pesan Anda : </label>
+            <br />
+            <textarea name="message" id="pesan" cols="137" rows="7" placeholder="Masukkan Pesan Anda"></textarea>
+            <br />
+            <input type="submit" value="Kirim">
+    </form>
+    </header>
+    <footer>
+        <p class="copyright">copyright &copy; 2022</p>
+    </footer>
+</body>
+</html>
